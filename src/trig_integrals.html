@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Trigonometric Integration</title>
+     <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link href="/main.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h2>&nbsp;&nbsp;&nbsp;Trigonometric Integrals Involving Powers of Secant and Tangent.</h2>
+    <br><br>
+    <p>&nbsp;&nbsp;&nbsp;<b>1)</b> If the power of the secant is even & positive, save a secant squared factor and convert the remaining factors to tangents, expand, and integrate:</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;\( \int\sec^{2k}x\tan^{n}x\mathrm{d}x = \int(\sec^{2}x)^{k-1}\tan^{n}x\sec^{2}x\mathrm{d}x = \int(1+\tan^{2}x)^{k-1}\tan^{n}x\sec^{2}x\mathrm{d}x \)</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;Then use u-substitution to solve.</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;Let \( u = \tan{x} \), so \( \mathrm{d}u = \sec^{2}x\mathrm{d}x \).</p>
+    <br><br>
+    <p>&nbsp;&nbsp;&nbsp;<b>2)</b> If the power of tangent is odd and positive, save a secant-tangent factor & convert the remaining factors to secants, expand, and integrate:</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;\( \int\sec^{n}x\tan^{2k+1}x\mathrm{d}x = \int\sec^{n-1}x(\tan^{2}x)^k\sec{x}\tan{x}\mathrm{d}x = \int\sec^{n-1}(\sec^{2}x-1)^k\sec{x}\tan{x}\mathrm{d}x \)</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;Again, use u-substitution to solve.</p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;Let \( u = \sec{x} \), so \( \mathrm{d}u = \sec{x}\tan{x}\mathrm{d}x \)</p></p>
+  </body>
+</html>

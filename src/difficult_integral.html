@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Integration Practice</title>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link href="/main.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <br>
+    <h2><center>&nbsp;&nbsp;&nbsp;Integrate</center></h2>
+    <br>
+    <p>$$ \int\frac{x^2}{(15+6x-9x^2)^\frac{3}{2}}\mathrm{d}x\hspace{2mm}=\hspace{2mm}\int\frac{x^2}{\left(16-9(x-\frac{1}{3})^{2}\right)^{\frac{3}{2}}}\mathrm{d}x $$</p>
+    <br>
+    <p>$$ \operatorname{Let}\hspace{2mm} u = x-\frac{1}{3} $$</p>
+    <br>
+    <p>$$ = \int\frac{(u+\frac{1}{3})^{2}}{(16-9u^{2})^{\frac{3}{2}}}\mathrm{d}u $$</p>
+    <br>
+    <p>$$ \operatorname{Let}\hspace{2mm} u = \frac{4}{3}\sin\theta,\hspace{2mm}\mathrm{d}u = \frac{4}{3}\cos\theta\mathrm{d}\theta $$</p>
+    <br>
+    <p>$$ = \int\frac{(\frac{4}{3}\sin\theta+\frac{1}{3})^{2}}{(16-16\sin^{2}\theta)^{\frac{3}{2}}}\cdot\frac{4}{3}\cos\theta\mathrm{d}\theta\hspace{2mm}=\hspace{2mm}\frac{4}{27\cdot64}\int\frac{(4\sin\theta+1)^{2}}{\cos^{3}\theta}\cos\theta\mathrm{d}\theta $$</p>
+    <br>
+    <p><center><b>After expanding the numerator and simplifying, we have</b></center></p>
+    <br>
+    <p>$$ \frac{1}{432}\int(16\tan^{2}\theta+8\sec\theta\tan\theta+\sec^{2}\theta)\mathrm{d}\theta $$</p>
+    <br>
+    <p><center><b>Using the proper Pythagorean Identity, putting in terms of secant and tangent,</b></center></p>
+    <br>
+    <p>$$ = \frac{1}{432}\int(17\sec^{2}\theta+8\sec\theta\tan\theta-16)\mathrm{d}\theta $$</p>
+    <br>
+    <p>$$ = \frac{17}{432}\tan\theta+\frac{1}{54}\sec\theta-\frac{1}{27}\theta+C $$</p>
+    <br>
+    <p>$$ = \frac{17}{432}\cdot\frac{3u}{\sqrt{16-9u^{2}}}+\frac{1}{54}\cdot\frac{4}{\sqrt{16-9u^{2}}}-\frac{1}{27}\sin^{-1}\left(\frac{3u}{4}\right)+C $$</p>
+    <br>
+    <p>$$ = \frac{17}{432}\cdot\frac{3(x-\frac{1}{3})}{\sqrt{16-9(x-\frac{1}{3}^{2})}}+\frac{1}{54}\cdot\frac{4}{\sqrt{16-9(x-\frac{1}{3}^{2})}}-\frac{1}{27}\sin^{-1}\left(\frac{3(x-\frac{1}{3})}{4}\right)+C $$</p>
+    <br>
+    <p>$$ = \frac{17}{432}\cdot\frac{3x-1}{\sqrt{15+6x-9x^{2}}}+\frac{1}{54}\cdot\frac{4}{\sqrt{15+6x-9x^{2}}}-\frac{1}{27}\sin^{-1}\left(\frac{3x-1}{4}\right)+C $$</p>
+    <br><br>
+  </body>
+</html>
